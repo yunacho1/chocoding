@@ -12,6 +12,86 @@ Plan
 #### Week 1 (Dec 4 - Dec 10)
 Work:
 - Read and watched GitHub tutorials (0.5 hours)
+- Created a list of coding ideas (1 hour)
+  - [ChatGPT Reference Convo](https://chat.openai.com/share/ab351e6c-b8e8-44e3-9c11-a639c52c63b9)
+- Coding: Simulation of the motion of the first four planets (1 hour)
+  - Used Pygame and known constants to simulate the motion of Mercury, Venus, Earth, and Mars.
+```
+import pygame
+import math
+
+# Constants for the simulation (not to scale)
+WIDTH, HEIGHT = 800, 600  # Screen dimensions
+G = 6.674 * (10 ** -11)   # Gravitational constant
+AU = 149.6 * (10 ** 9)    # 1 AU (Astronomical Unit) in meters
+
+# Planet data (semi-major axis in AU, orbital period in Earth days)
+planet_data = {
+    'Mercury': {'semi_major_axis': 0.39, 'orbital_period': 88.0},
+    'Venus': {'semi_major_axis': 0.72, 'orbital_period': 224.7},
+    'Earth': {'semi_major_axis': 1.0, 'orbital_period': 365.2},
+    'Mars': {'semi_major_axis': 1.52, 'orbital_period': 687.0}
+}
+
+# Initialize Pygame
+pygame.init()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Solar System Simulation")
+
+# Colors
+WHITE = (255, 255, 255)
+YELLOW = (255, 255, 0)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+
+# Function to calculate position based on time
+def calculate_position(semi_major_axis, orbital_period, time):
+    angle = (2 * math.pi * time) / orbital_period
+    x = semi_major_axis * AU * math.cos(angle)
+    y = semi_major_axis * AU * math.sin(angle)
+    return x, y
+
+# Main simulation loop
+clock = pygame.time.Clock()
+time_passed = 0
+
+running = True
+while running:
+    screen.fill(WHITE)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Simulate and draw planets
+    for planet_name, data in planet_data.items():
+        semi_major_axis = data['semi_major_axis']
+        orbital_period = data['orbital_period']
+        x, y = calculate_position(semi_major_axis, orbital_period, time_passed)
+        radius = 5  # Radius of the planet (not to scale)
+        
+        # Adjust positions to fit on the screen
+        screen_x = int((x / (1.5 * AU)) * WIDTH) + WIDTH // 2
+        screen_y = int((y / (1.5 * AU)) * HEIGHT) + HEIGHT // 2
+        
+        # Draw planets
+        if planet_name == 'Mercury':
+            pygame.draw.circle(screen, RED, (screen_x, screen_y), radius)
+        elif planet_name == 'Venus':
+            pygame.draw.circle(screen, GREEN, (screen_x, screen_y), radius)
+        elif planet_name == 'Earth':
+            pygame.draw.circle(screen, BLUE, (screen_x, screen_y), radius)
+        elif planet_name == 'Mars':
+            pygame.draw.circle(screen, YELLOW, (screen_x, screen_y), radius)
+
+    pygame.display.flip()
+    time_passed += 1  # Time increment for simulation (can be adjusted for speed)
+
+    clock.tick(60)  # Limit to 60 frames per second
+
+pygame.quit()
+```
 - Installed Java, Editor MD, BinaryMaker (0.5 hours)
 - Studied the manual (1 hour)
 - Explored the different functions and adjusted parameters (1 hour)
@@ -20,7 +100,7 @@ Work:
 
 
 Ideas:
-- Simulate the motion of the planets around the Sun
+- Simulate the solar system
 - Explore machine learning in astronomy
 - Simulate binary star systems using PyGame
 
