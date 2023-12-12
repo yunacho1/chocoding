@@ -1,0 +1,11 @@
+1. Open binarymaker folder
+2. Click 'BM3.command'
+
+Light curve plot
+- f1 to zoom in, f2 to zoom out, f3 to reset
+
+Radial velocity plot
+- f1 to zoom in, f2 to zoom out, f3 to reset
+
+Render = begins simulation
+Double click fastly to play the simulation point by point
