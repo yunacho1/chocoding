@@ -2,12 +2,16 @@
 Winter 23-24 Coding
 
 ## Winter 2023-24 Worklog
-#### Week 2 (Dec 11 - )
+
+#### Week 2 + Winter Break (Dec 11 - Dec 15, - Jan 7)
 Plan
 - [ ] Match binary star system curve using BinaryMaker
 - [ ] Practice coding using Java
-- [ ] Study about ScikitLearn
-- [ ] Research binary stars
+- [x] Study about ScikitLearn (1.5 hour)
+- [x] Research binary stars (1 hour)
+
+Scikit Learn Tutorial: 2 hours (1.5 speed)
+
 
 #### Week 1 (Dec 4 - Dec 10)
 Work:
