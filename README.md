@@ -99,7 +99,7 @@ https://www.youtube.com/watch?v=0B5eIE_1vpU
 
 
 #### Week 1 (Dec 4 - Dec 10)
-Work:
+##### Work:
 - Read and watched GitHub tutorials (0.5 hours)
 - Created a list of coding ideas (1 hour)
   - [ChatGPT Reference Convo](https://chat.openai.com/share/ab351e6c-b8e8-44e3-9c11-a639c52c63b9)
@@ -188,7 +188,7 @@ pygame.quit()
 <img width="1440" alt="Screenshot 2023-12-12 at 6 46 41" src="https://github.com/yunacho1/yunacho1/assets/150376499/235bec51-bb46-481a-880e-978107dd8bb3">
 
 
-Ideas:
+##### Ideas:
 - Simulate the solar system
 - Explore machine learning in astronomy
 - Simulate binary star systems using PyGame
