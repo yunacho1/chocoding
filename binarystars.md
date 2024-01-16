@@ -20,3 +20,8 @@ Winter 23-24 Coding
     - Polaris is a pentuple system
     - tend to be instable, since stars get ejected from systems
     - chemical fingerprint: stars in a system have a similar elemental composition
+  - Eclipsing Binaries
+    - edge-on orbits
+    - ![eclipsingbinary](https://github.com/yunacho1/chocoding/assets/150376499/c1b2ccd1-5b6a-42e9-b042-e4130c748610)
+
+
