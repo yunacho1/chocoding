@@ -71,7 +71,8 @@ https://github.com/yunacho1/chocoding/assets/150376499/84465e63-7e2e-4a6c-814e-1
 <img width="633" alt="Screenshot 2024-01-16 at 11 04 01" src="https://github.com/yunacho1/chocoding/assets/150376499/06e64358-5c22-446d-9273-29ae6d1a1564">
 
 Coding practice: C++ (1.5 hours)
-
+- Learned about binary search
+- <img width="408" alt="Screenshot 2024-01-16 at 11 11 53" src="https://github.com/yunacho1/chocoding/assets/150376499/628c6d2f-1120-4f46-a491-8071150bc91c">
 
 #### Week 2 + Winter Break (Dec 11 - Dec 15, - Jan 7)
 Plan
