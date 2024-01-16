@@ -75,7 +75,7 @@ Coding practice: C++ (1.5 hours)
 - <img width="408" alt="Screenshot 2024-01-16 at 11 11 53" src="https://github.com/yunacho1/chocoding/assets/150376499/628c6d2f-1120-4f46-a491-8071150bc91c">
 
 #### Week 2 + Winter Break (Dec 11 - Dec 15, - Jan 7)
-##### Plan
+Plan
 - [x] Practice coding using Java
 - [x] Study about ScikitLearn (2 hours)
 
@@ -99,7 +99,7 @@ Notes from Tutorial:
 
 
 #### Week 1 (Dec 4 - Dec 10)
-##### Work:
+Work:
 - Read and watched GitHub tutorials (0.5 hours)
 - Created a list of coding ideas (1 hour)
   - [ChatGPT Reference Convo](https://chat.openai.com/share/ab351e6c-b8e8-44e3-9c11-a639c52c63b9)
@@ -188,7 +188,7 @@ pygame.quit()
 <img width="1440" alt="Screenshot 2023-12-12 at 6 46 41" src="https://github.com/yunacho1/yunacho1/assets/150376499/235bec51-bb46-481a-880e-978107dd8bb3">
 
 
-##### Ideas:
+Ideas:
 - Simulate the solar system
 - Explore machine learning in astronomy
 - Simulate binary star systems using PyGame
