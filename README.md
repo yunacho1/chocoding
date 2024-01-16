@@ -3,7 +3,7 @@ Winter 23-24 Coding
 
 ## Winter 2023-24 Worklog
 #### Week 3 (Jan 8 - Jan 14)
-Plan:
+##### Plan:
 - [ ] Match binary star system curve using BinaryMaker
 - [x] Coding problems to practice coding
 - [x] Research binary stars
