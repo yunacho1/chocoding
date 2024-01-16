@@ -69,6 +69,61 @@ https://github.com/yunacho1/chocoding/assets/150376499/84465e63-7e2e-4a6c-814e-1
 
 <img width="639" alt="Screenshot 2024-01-16 at 11 03 45" src="https://github.com/yunacho1/chocoding/assets/150376499/7b637fe8-8713-45ea-b2fa-27685c551d51">
 <img width="633" alt="Screenshot 2024-01-16 at 11 04 01" src="https://github.com/yunacho1/chocoding/assets/150376499/06e64358-5c22-446d-9273-29ae6d1a1564">
+Simulation of binary star system with one star twice as massive as the other (30 mins)
+- Attempted debugging with ChatGPT, but still has errors.
+```
+from vpython import *
+
+def main():
+    # Simulate the motion of a binary system with one star twice as massive as the other
+
+    # Define constants
+    G = 6.67480e-11
+    
+    # Mass of the stars
+    m_star1 = 2 * 1.9891e30  # Twice the mass of the sun
+    m_star2 = 1.9891e30  # Mass of the sun
+    
+    # Radius of the stars (not to scale)
+    r_star = 2e10
+    
+    # Initial distance between the stars
+    initial_distance = 1e11
+    
+    # Create the objects
+    star1 = sphere(pos=vector(-initial_distance/2, 0, 0), radius=r_star, color=color.yellow)
+    star2 = sphere(pos=vector(initial_distance/2, 0, 0), radius=r_star, color=color.yellow)
+    
+    # Set initial velocities
+    star1.velocity = vector(0, 1e4, 0)  # Adjusted initial velocity
+    star2.velocity = vector(0, -1e4, 0)  # Adjusted initial velocity
+    
+    # Define initial time
+    t = 0
+    
+    # Define time interval
+    dt = 1e4 
+    
+    while t < 1e10:
+        rate(300)
+        
+        # Update positions
+        star1.pos = star1.pos + star1.velocity * dt
+        star2.pos = star2.pos + star2.velocity * dt
+        
+        # Calculate gravitational forces
+        r_vector = star1.pos - star2.pos
+        F_grav = -(G * m_star1 * m_star2) / mag(r_vector)**2 * norm(r_vector)
+        
+        # Update velocities
+        star1.velocity = star1.velocity + (F_grav / m_star1) * dt
+        star2.velocity = star2.velocity - (F_grav / m_star2) * dt
+        
+        t += dt
+
+main()
+```
+
 
 Coding practice: C++ (1.5 hours)
 - Learned about binary search
