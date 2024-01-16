@@ -9,7 +9,8 @@ Plan:
 - [x] Research binary stars
 
 Math behind binary star modeling (15 mins)
-(https://joss.tcnj.edu/wp-content/uploads/sites/176/2012/04/2012-Silano-Revised.pdf)
+
+https://joss.tcnj.edu/wp-content/uploads/sites/176/2012/04/2012-Silano-Revised.pdf
 
 Background research on binary stars (1 hour)
 
