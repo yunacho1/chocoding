@@ -8,7 +8,8 @@ Plan:
 - [x] Coding problems to practice coding
 - [x] Research binary stars
 
-Math behind binary star modeling (15 mins)
+Experimented with the BinaryMaker (0.5 hours)
+Math behind binary star modeling (0.25 hours)
 
 https://joss.tcnj.edu/wp-content/uploads/sites/176/2012/04/2012-Silano-Revised.pdf
 
