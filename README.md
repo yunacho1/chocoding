@@ -10,7 +10,55 @@ Plan:
 
 Programmed a simulation of binary star system using Python (1 hour)
 ```
-dfdd
+from vpython import *
+
+def main():
+    # Simulate the motion of a binary system with two stars of equal mass
+
+    # Define constants
+    G = 6.67480e-11
+    
+    # Mass of the stars
+    m_star = 1.9891e30
+    
+    # Radius of the stars (not to scale)
+    r_star = 2e10
+    
+    # Initial distance between the stars
+    initial_distance = 1e11
+    
+    # Create the objects
+    star1 = sphere(pos=vector(-initial_distance/2, 0, 0), radius=r_star, color=color.yellow)
+    star2 = sphere(pos=vector(initial_distance/2, 0, 0), radius=r_star, color=color.yellow)
+    
+    # Set initial velocities
+    star1.velocity = vector(0, 3e4, 0)
+    star2.velocity = vector(0, -3e4, 0)
+    
+    # Define initial time
+    t = 0
+    
+    # Define time interval
+    dt = 3600
+    
+    while t < 1e10:
+        rate(3000)
+        
+        # Update positions
+        star1.pos = star1.pos + star1.velocity * dt
+        star2.pos = star2.pos + star2.velocity * dt
+        
+        # Calculate gravitational forces
+        r_vector = star1.pos - star2.pos
+        F_grav = -(G * m_star**2) / mag(r_vector)**2 * norm(r_vector)
+        
+        # Update velocities
+        star1.velocity = star1.velocity + (F_grav / m_star) * dt
+        star2.velocity = star2.velocity - (F_grav / m_star) * dt
+        
+        t += dt
+
+main()
 ```
 
 Coding practice: C++ (1.5 hours)
