@@ -22,6 +22,12 @@ Winter 23-24 Coding
     - chemical fingerprint: stars in a system have a similar elemental composition
   - Eclipsing Binaries
     - edge-on orbits
+    -
     - ![eclipsingbinary](https://github.com/yunacho1/chocoding/assets/150376499/c1b2ccd1-5b6a-42e9-b042-e4130c748610)
-
+    - from the dips, information such as size, mass, rotation rate, temperature, and distance may be determined
+  - Contact Binaries
+    - the two stars contact each other
+    - mutual tidal effects change its form to a teardrop or peanut
+    - algol paradox: mass transfer between higher mass and lower mass star
+    - stellar novae
 
