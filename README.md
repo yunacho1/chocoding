@@ -3,7 +3,7 @@ Winter 23-24 Coding
 
 ## Winter 2023-24 Worklog
 #### Week 3 (Jan 8 - Jan 14)
-##### Plan:
+Plan:
 - [ ] Match binary star system curve using BinaryMaker
 - [x] Coding problems to practice coding
 - [x] Research binary stars
@@ -61,7 +61,7 @@ def main():
 main()
 ```
 
-##### Results
+Results
 
 
 https://github.com/yunacho1/chocoding/assets/150376499/84465e63-7e2e-4a6c-814e-16131d765ce2
