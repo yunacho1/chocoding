@@ -8,6 +8,9 @@ Plan:
 - [x] Coding problems to practice coding
 - [x] Research binary stars
 
+Math behind binary star modeling (15 mins)
+(https://joss.tcnj.edu/wp-content/uploads/sites/176/2012/04/2012-Silano-Revised.pdf)
+
 Background research on binary stars (1 hour)
 
 - Notes are on [binarystars.md](https://github.com/yunacho1/chocoding/blob/be246d5dfdab3ead4eab7eb11a4588af1334a4db/binarystars.md)
