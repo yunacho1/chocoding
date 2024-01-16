@@ -250,7 +250,7 @@ pygame.quit()
 - Installed Java, Editor MD, BinaryMaker (0.5 hours)
 - Studied the manual (1 hour)
 - Explored the different functions and adjusted parameters (1 hour)
-- Created a field guide for BinaryMaker (1.5 hour)
+- Created a ([field guide]https://github.com/yunacho1/chocoding/blob/9e66feb10031af39febc42b5b37fc2b51040f2b8/bm3fieldguide) for BinaryMaker (1.5 hour)
 <img width="1440" alt="Screenshot 2023-12-12 at 6 46 41" src="https://github.com/yunacho1/yunacho1/assets/150376499/235bec51-bb46-481a-880e-978107dd8bb3">
 
 
