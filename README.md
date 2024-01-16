@@ -8,7 +8,7 @@ Plan:
 - [x] Coding problems to practice coding
 - [x] Research binary stars
 
-Programmed a simulation of binary star system using Python (1 hour)
+Programmed a simulation of binary star system of equal mass using Python (1 hour)
 ```
 from vpython import *
 
