@@ -5,8 +5,16 @@ Winter 23-24 Coding
 #### Week 3 (Jan 8 - Jan 14)
 Plan:
 - [ ] Match binary star system curve using BinaryMaker
-- [ ] Coding problems to practice coding
-- [ ] Research binary stars 
+- [x] Coding problems to practice coding
+- [x] Research binary stars
+
+Programmed a simulation of binary star system using Python (1 hour)
+```
+dfdd
+```
+
+Coding practice: C++ (1.5 hours)
+
 
 #### Week 2 + Winter Break (Dec 11 - Dec 15, - Jan 7)
 Plan
