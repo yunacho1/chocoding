@@ -10,7 +10,7 @@ Plan:
 
 Background research on binary stars (1 hour)
 
-- Notes are in binarystars.md(binarystars.md)
+- Notes are in ([binarystars.md](https://github.com/yunacho1/chocoding/blob/be246d5dfdab3ead4eab7eb11a4588af1334a4db/binarystars.md))
 
 Programmed a simulation of binary star system of equal mass using Python (1 hour)
 ```
