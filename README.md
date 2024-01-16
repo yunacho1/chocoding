@@ -70,7 +70,7 @@ https://github.com/yunacho1/chocoding/assets/150376499/84465e63-7e2e-4a6c-814e-1
 <img width="639" alt="Screenshot 2024-01-16 at 11 03 45" src="https://github.com/yunacho1/chocoding/assets/150376499/7b637fe8-8713-45ea-b2fa-27685c551d51">
 <img width="633" alt="Screenshot 2024-01-16 at 11 04 01" src="https://github.com/yunacho1/chocoding/assets/150376499/06e64358-5c22-446d-9273-29ae6d1a1564">
 
-Simulation of binary star system with one star twice as massive as the other (30 mins)
+Simulation of binary star system with one star twice as massive as the other (1 hour)
 - Attempted debugging with ChatGPT, but still has errors.
 
 ```
