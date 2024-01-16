@@ -8,6 +8,9 @@ Plan:
 - [x] Coding problems to practice coding
 - [x] Research binary stars
 
+Background research on binary stars (1 hour)
+Notes are in binarystars.md
+
 Programmed a simulation of binary star system of equal mass using Python (1 hour)
 ```
 from vpython import *
