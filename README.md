@@ -127,7 +127,7 @@ main()
 ```
 
 
-https://github.com/yunacho1/chocoding/assets/150376499/3709ed5f-8ac3-4f0c-ac8f-457afe91f9d6
+https://github.com/yunacho1/chocoding/assets/150376499/31b1cc66-9b11-4dcb-ab15-021807559428
 
 
 <img width="549" alt="Screenshot 2024-01-16 at 14 30 05" src="https://github.com/yunacho1/chocoding/assets/150376499/0a138233-f4b7-46bf-8a4a-c6ea2f4b10d0">
