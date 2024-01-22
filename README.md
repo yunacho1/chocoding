@@ -2,6 +2,14 @@
 Winter 23-24 Coding
 
 ## Winter 2023-24 Worklog
+
+#### Week 4 (Jan 15 - Jan 21)
+
+BM3: ASEriB
+<img width="599" alt="Screenshot 2024-01-22 at 18 10 07" src="https://github.com/yunacho1/chocoding/assets/150376499/2d5dc8c3-f0e9-4cba-9bdd-15abc87534b1">
+
+
+
 #### Week 3 (Jan 8 - Jan 14)
 Plan:
 - [ ] Match binary star system curve using BinaryMaker
