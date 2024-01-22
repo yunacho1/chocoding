@@ -9,7 +9,7 @@ Final Project Outline (1 hour)
 - Find binary system information on journals
     - Contact binaries
 - Enter the parameters on BM3
-- Download data for
+- Download simulation from BM3
 - Code using the same parameters
 - Comparison between BM3 and my Python simulation
 
