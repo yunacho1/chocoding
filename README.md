@@ -19,9 +19,6 @@ Read the Binary Maker Manual (0.5 hours)
 
 <img width="600" alt="Screenshot 2024-01-22 at 18 15 21" src="https://github.com/yunacho1/chocoding/assets/150376499/6db5ab2d-0f69-4cc8-8860-b02227a147f1">
 
-<img width="600" alt="ASEriB Simulation" src="https://github.com/yunacho1/chocoding/assets/150376499/7f06b257-2a51-4d48-8671-1941e15ce878">
-
-
 
 Try contact binary star 
 
@@ -30,6 +27,10 @@ Try contact binary star
 BM3: ASEriB 
 
 <img width="599" alt="Screenshot 2024-01-22 at 18 10 07" src="https://github.com/yunacho1/chocoding/assets/150376499/2d5dc8c3-f0e9-4cba-9bdd-15abc87534b1">
+
+
+https://github.com/yunacho1/chocoding/assets/150376499/608710b6-6c63-41e8-9df2-9eb011273970
+
 
 Simulation on a 
 
