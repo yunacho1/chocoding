@@ -4,6 +4,9 @@ Winter 23-24 Coding
 ## Winter 2023-24 Worklog
 
 #### Week 4 (Jan 15 - Jan 21)
+Try contact binary star
+
+
 
 BM3: ASEriB
 
