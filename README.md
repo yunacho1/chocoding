@@ -21,6 +21,7 @@ Read the Binary Maker Manual (0.5 hours)
 
 
 Try contact binary star 
+<img width="694" alt="Screenshot 2024-01-22 at 18 57 17" src="https://github.com/yunacho1/chocoding/assets/150376499/0f9a6ad1-1a5a-4f10-9e04-8433aa208cf3">
 
 
 
@@ -32,7 +33,7 @@ BM3: ASEriB
 https://github.com/yunacho1/chocoding/assets/150376499/608710b6-6c63-41e8-9df2-9eb011273970
 
 
-Simulation on a 
+Simulation on python with the same mass ratio
 
 
 #### Week 3 (Jan 8 - Jan 14)
