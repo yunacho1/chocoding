@@ -13,13 +13,78 @@ Final Project Outline (1 hour)
 - Code using the same parameters
 - Comparison between BM3 and my Python simulation
 
-Researched different code for binary system (1 hour)
+Researched different code for binary system (0.5 hours)
 
 [Github Reference](https://gist.github.com/andrelondono/e93422e36abe8787e414f735a7cb2581)
 
 <img width="580" alt="Screenshot 2024-01-23 at 9 14 50" src="https://github.com/yunacho1/chocoding/assets/150376499/5d2391f3-6a10-49e9-ab6a-ae95c789ccde">
 
 Did not work due to unidentified library, 'visual'. I had vpython but for some reason it could not find visual.
+
+Coding and debugging (1 hour)
+
+```
+from vpython import *
+
+def main():
+    # Simulate the motion of a binary system with one star more massive than the other
+
+    # Define constants
+    G = 6.67480e-11
+    
+    # Mass ratio
+    mass_ratio = 0.11
+    
+    # Mass of the stars
+    m_star1 = 1.9891e30  # Mass of the sun
+    m_star2 = mass_ratio * m_star1  # More massive star
+    
+    # Radius of the stars (not to scale)
+    r_star = 5e10
+    
+    # Initial distance between the stars
+    initial_distance = 1e11
+    
+    # Create the objects
+    star1 = sphere(pos=vector(-initial_distance/2, 0, 0), radius=r_star, color=color.yellow)
+    star2 = sphere(pos=vector(initial_distance/2, 0, 0), radius=r_star, color=color.blue)
+    
+    # Set initial velocities
+    star1.velocity = vector(0, 1e3, 0)
+    star2.velocity = vector(0, -mass_ratio * 1e3, 0)  # Adjusted velocity based on mass ratio
+    
+    # Define initial time
+    t = 0
+    
+    # Define time interval
+    dt = 1e4
+    
+    while t < 1e10:
+        rate(300)
+        
+        # Update positions
+        star1.pos = star1.pos + star1.velocity * dt
+        star2.pos = star2.pos + star2.velocity * dt
+        
+        # Calculate gravitational forces
+        r_vector = star1.pos - star2.pos
+        F_grav = -(G * m_star1 * m_star2) / mag(r_vector)**2 * norm(r_vector)
+        
+        # Update velocities
+        star1.velocity = star1.velocity + (F_grav / m_star1) * dt
+        star2.velocity = star2.velocity - (F_grav / m_star2) * dt
+        
+        t += dt
+
+main()
+
+```
+
+<img width="548" alt="Screenshot 2024-01-23 at 9 19 03" src="https://github.com/yunacho1/chocoding/assets/150376499/070acde4-1245-44b2-8a50-71bb235658e5">
+
+
+My resulting binary star system with a star mass ratio of 0.11 ended up not working. I will look more into it in the following week.
+
 
 
 Read the Binary Maker Manual (0.5 hours)
