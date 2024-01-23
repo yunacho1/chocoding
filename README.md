@@ -13,6 +13,12 @@ Final Project Outline (1 hour)
 - Code using the same parameters
 - Comparison between BM3 and my Python simulation
 
+Researched different code for binary system (1 hour)
+[Github Reference]([https://chat.openai.com/share/ab351e6c-b8e8-44e3-9c11-a639c52c63b9](https://gist.github.com/andrelondono/e93422e36abe8787e414f735a7cb2581))
+
+<img width="580" alt="Screenshot 2024-01-23 at 9 14 50" src="https://github.com/yunacho1/chocoding/assets/150376499/5d2391f3-6a10-49e9-ab6a-ae95c789ccde">
+
+Did not work due to unidentified library, 'visual'. I had vpython but for some reason it could not find visual.
 
 
 Read the Binary Maker Manual (0.5 hours)
