@@ -9,6 +9,61 @@ Debugging vpython simulation (2 hours)
 - Changed parameters such as velocity, mass, radius, and initial distance.
 - Utilized Chat GPT, but did not help
 
+```
+from vpython import *
+
+def main():
+    # Simulate the motion of a binary system with one star more massive than the other
+
+    # Define constants
+    G = 6.67480e-11
+    
+    # Mass ratio
+    mass_ratio = 0.11
+    
+    # Mass of the stars
+    m_star1 = 1.9891e30  # Mass of the sun
+    m_star2 = mass_ratio * m_star1  # less massive star
+    
+    # Radius of the stars (not to scale)
+    r_star = 4e10
+    
+    # Initial distance between the stars
+    initial_distance = 1e12
+    
+    # Create the objects
+    star1 = sphere(pos=vector(-initial_distance/2, 0, 0), radius=r_star, color=color.yellow)
+    star2 = sphere(pos=vector(initial_distance/2, 0, 0), radius=r_star, color=color.blue)
+    
+    # Set initial velocities
+    star1.velocity = vector(0, -mass_ratio *7e3, 0)
+    star2.velocity = vector(0, 7e3, 0)  # Adjusted velocity based on mass ratio
+    
+    # Define initial time
+    t = 0
+    
+    # Define time interval
+    dt = 1e4
+    
+    while t < 1e10:
+        rate(300)
+        
+        # Update positions
+        star1.pos = star1.pos + star1.velocity * dt
+        star2.pos = star2.pos + star2.velocity * dt
+        
+        # Calculate gravitational forces
+        r_vector = star1.pos - star2.pos
+        F_grav = -(G * m_star1 * m_star2) / mag(r_vector)**2 * norm(r_vector)
+        
+        # Update velocities
+        star1.velocity = star1.velocity + (F_grav / m_star1) * dt
+        star2.velocity = star2.velocity - (F_grav / m_star2) * dt
+        
+        t += dt
+
+main()
+```
 
 
 https://github.com/yunacho1/chocoding/assets/150376499/76839e5d-b481-4035-9b19-737d075ad0e9
