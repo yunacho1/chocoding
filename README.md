@@ -2,6 +2,20 @@
 Winter 23-24 Coding
 
 ## Winter 2023-24 Worklog
+#### Week 5 (Jan 22 - Jan 28)
+
+Debugging vpython simulation (2 hours)
+
+- Changed parameters such as velocity, mass, radius, and initial distance.
+- Utilized Chat GPT, but did not help
+
+
+
+https://github.com/yunacho1/chocoding/assets/150376499/76839e5d-b481-4035-9b19-737d075ad0e9
+
+
+
+
 
 #### Week 4 (Jan 15 - Jan 21)
 
