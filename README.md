@@ -4,6 +4,95 @@ Winter 23-24 Coding
 ## Winter 2023-24 Worklog
 #### Week 5 (Jan 22 - Jan 28)
 
+Triple star system (1.5 hours)
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+# Constants
+G = 6.67430e-11  # Gravitational constant
+m = 1.989e30     # Mass of each star (in kg)
+dt = 3600        # Time step in seconds
+num_steps = 10000
+
+# Initial conditions
+r1 = np.array([0.5e12, 0, 0])  # Initial position of star 1 (in meters)
+r2 = np.array([0, 0.5e12, 0])  # Initial position of star 2 (in meters)
+r3 = np.array([0, 0, 0.5e12])  # Initial position of star 3 (in meters)
+v1 = np.array([0.0, 1000.0, 0.0])    # Initial velocity of star 1 (in m/s)
+v2 = np.array([0.0, 0.0, -1000.0])   # Initial velocity of star 2 (in m/s)
+v3 = np.array([1000.0, 0.0, 0.0])    # Initial velocity of star 3 (in m/s)
+
+# Arrays to store positions
+positions1 = np.zeros((num_steps, 3))
+positions2 = np.zeros((num_steps, 3))
+positions3 = np.zeros((num_steps, 3))
+
+# Euler integration method
+for i in range(num_steps):
+    # Calculate distances between stars
+    r12 = np.linalg.norm(r2 - r1)
+    r13 = np.linalg.norm(r3 - r1)
+    r23 = np.linalg.norm(r3 - r2)
+    
+    # Calculate gravitational forces
+    F12 = G * m**2 / r12**2
+    F13 = G * m**2 / r13**2
+    F23 = G * m**2 / r23**2
+    
+    # Calculate directions of forces
+    direction12 = (r2 - r1) / r12
+    direction13 = (r3 - r1) / r13
+    direction23 = (r3 - r2) / r23
+    
+    # Calculate accelerations
+    a1 = (F12 * direction12 + F13 * direction13) / m
+    a2 = (-F12 * direction12 + F23 * direction23) / m
+    a3 = (-F13 * direction13 - F23 * direction23) / m
+    
+    # Update velocities and positions
+    v1 += (a1 * dt).astype(np.float64)
+    v2 += (a2 * dt).astype(np.float64)
+    v3 += (a3 * dt).astype(np.float64)
+
+    r1 += (v1 * dt).astype(np.float64)
+    r2 += (v2 * dt).astype(np.float64)
+    r3 += (v3 * dt).astype(np.float64)
+    
+    # Store positions for plotting
+    positions1[i] = r1
+    positions2[i] = r2
+    positions3[i] = r3
+
+# Plotting
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+# Plotting trajectories
+ax.plot(positions1[:, 0], positions1[:, 1], positions1[:, 2], label='Star 1')
+ax.plot(positions2[:, 0], positions2[:, 1], positions2[:, 2], label='Star 2')
+ax.plot(positions3[:, 0], positions3[:, 1], positions3[:, 2], label='Star 3')
+
+# Plot initial positions
+ax.scatter(r1[0], r1[1], r1[2], color='red', label='Initial Star 1')
+ax.scatter(r2[0], r2[1], r2[2], color='blue', label='Initial Star 2')
+ax.scatter(r3[0], r3[1], r3[2], color='green', label='Initial Star 3')
+
+ax.set_xlabel('X-axis')
+ax.set_ylabel('Y-axis')
+ax.set_zlabel('Z-axis')
+ax.legend()
+plt.title('Three-Star System Motion')
+plt.show()
+```
+
+
+<img width="619" alt="Screenshot 2024-01-29 at 20 26 38" src="https://github.com/yunacho1/chocoding/assets/150376499/9fc0f29f-7622-4cdb-b21f-55d4f89892e7">
+
+
+
 Debugging vpython simulation (2 hours)
 
 - Changed parameters such as velocity, mass, radius, and initial distance.
